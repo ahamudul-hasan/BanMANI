@@ -43,7 +43,12 @@ wheels/
 *.pt
 *.pth
 *.h5
-# Data/BanMANI.csv  # Uncomment if you want to track data
+*.bin
+banmani_model/
+checkpoints/
+models/
+Data/
+*.csv
 
 # OS
 .DS_Store
@@ -52,3 +57,27 @@ Thumbs.db
 # Environment files
 .env
 .env.local
+
+# Logs
+*.log
+logs/
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*~
+.#*
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Cache
+.cache/
+*.cache
+
+# Node modules (if using JS tools)
+node_modules/
+
