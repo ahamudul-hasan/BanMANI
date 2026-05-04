@@ -1,0 +1,54 @@
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+
+# Python
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Models and Data (if needed)
+*.pt
+*.pth
+*.h5
+# Data/BanMANI.csv  # Uncomment if you want to track data
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
