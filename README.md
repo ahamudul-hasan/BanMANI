@@ -202,6 +202,24 @@ BanMANI/
 └── requirements.txt              # Dependencies
 ```
 
+## Model files
+
+Large trained model files are NOT included in this repository (they exceed GitHub's file size limits). The repository ignores `Notebook/banmani_model/pytorch_model.bin`.
+
+To obtain the model when you clone this repo, either download it from a provided host or run the helper script. Example:
+
+```bash
+# Install extra dependency for the downloader
+pip install -r requirements.txt
+
+# Download the model to the expected location
+python scripts/download_model.py --url <MODEL_URL> --dest Notebook/banmani_model/pytorch_model.bin
+```
+
+Replace `<MODEL_URL>` with the direct download URL (e.g., a file hosted on cloud storage or a HuggingFace model repository). After placing the file at `Notebook/banmani_model/pytorch_model.bin` the notebook/scripts will load it normally.
+
+If you are a maintainer and want to include large files in the repo, consider using Git LFS (https://git-lfs.github.com/) and migrating the file into LFS.
+
 ## Advanced Usage
 
 ### Custom Confidence Threshold

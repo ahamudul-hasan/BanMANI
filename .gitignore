@@ -50,6 +50,9 @@ models/
 Data/
 *.csv
 
+# Explicitly ignore the large trained model saved in the notebook folder
+Notebook/banmani_model/pytorch_model.bin
+
 # OS
 .DS_Store
 Thumbs.db
