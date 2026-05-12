@@ -85,3 +85,5 @@ htmlcov/
 node_modules/
 
 Notebook/banmani_model
+
+scripts/
